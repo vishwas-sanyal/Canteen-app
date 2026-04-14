@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { Snack, Student, Order, OrderItem } from '@types/index';
+import type { Snack, Student, Order, OrderItem } from '@types/index';
 
 interface CartStore {
   cartItems: OrderItem[];

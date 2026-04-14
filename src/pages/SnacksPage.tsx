@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   SnackCard,
   SearchBar,
@@ -11,7 +11,7 @@ import {
 import { useCartStore, useSnacksStore, useUIStore } from '@store/index';
 import { getSnacks, createOrder } from '@api/index';
 import { filterSnacks } from '@utils/index';
-import { Snack } from '@types/index';
+import type { Snack } from '@types/index';
 
 export const SnacksPage: React.FC<{ students: any[] }> = ({ students }) => {
   const { snacks, setSnacks } = useSnacksStore();

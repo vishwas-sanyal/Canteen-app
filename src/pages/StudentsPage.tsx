@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   StudentCard,
   SearchBar,
@@ -10,7 +10,7 @@ import {
 import { useStudentsStore, useUIStore } from '@store/index';
 import { getStudents, createStudent } from '@api/index';
 import { filterStudents } from '@utils/index';
-import { Student, AddStudentFormData } from '@types/index';
+import type { Student, AddStudentFormData } from '@types/index';
 
 interface StudentsPageProps {
   onSelectStudent: (student: Student) => void;

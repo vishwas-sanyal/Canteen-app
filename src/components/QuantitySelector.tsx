@@ -1,4 +1,4 @@
-import React from 'react';
+import type { FC } from 'react';
 
 interface QuantitySelectorProps {
   quantity: number;
@@ -7,7 +7,7 @@ interface QuantitySelectorProps {
   maxQuantity?: number;
 }
 
-export const QuantitySelector: React.FC<QuantitySelectorProps> = ({
+export const QuantitySelector: FC<QuantitySelectorProps> = ({
   quantity,
   onIncrease,
   onDecrease,

@@ -1,4 +1,4 @@
-import React from 'react';
+import type { FC } from 'react';
 import { motion } from 'framer-motion';
 
 interface TabToggleProps {
@@ -6,7 +6,7 @@ interface TabToggleProps {
   onTabChange: (tab: 'snacks' | 'students') => void;
 }
 
-export const TabToggle: React.FC<TabToggleProps> = ({ activeTab, onTabChange }) => {
+export const TabToggle: FC<TabToggleProps> = ({ activeTab, onTabChange }) => {
   return (
     <div className="flex justify-center gap-2 md:gap-4 mt-4 md:mt-6">
       <motion.button

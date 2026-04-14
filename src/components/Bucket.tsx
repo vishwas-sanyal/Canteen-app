@@ -1,4 +1,4 @@
-import React from 'react';
+import type { FC } from 'react';
 
 interface BucketProps {
     itemCount: number;
@@ -6,7 +6,7 @@ interface BucketProps {
     isDragOver?: boolean;
 }
 
-export const Bucket: React.FC<BucketProps> = ({ itemCount, onClick, isDragOver = false }) => {
+export const Bucket: FC<BucketProps> = ({ itemCount, onClick, isDragOver = false }) => {
     return (
         <div
             onClick={onClick}

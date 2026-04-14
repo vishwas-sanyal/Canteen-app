@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { Student, Order } from '@types/index';
+import type { Student, Order } from '@types/index';
 import { getStudentOrders } from '@api/index';
 import { LoadingSpinner, ErrorMessage } from '@components/index';
 

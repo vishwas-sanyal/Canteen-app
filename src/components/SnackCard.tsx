@@ -1,5 +1,5 @@
-import React from 'react';
-import { Snack } from '@types/index';
+import type { FC } from 'react';
+import type { Snack } from '@types/index';
 
 interface SnackCardProps {
   snack: Snack;
@@ -8,7 +8,7 @@ interface SnackCardProps {
   isDragOverBucket?: boolean;
 }
 
-export const SnackCard: React.FC<SnackCardProps> = ({
+export const SnackCard: FC<SnackCardProps> = ({
   snack,
   onOrder,
   onDrag,

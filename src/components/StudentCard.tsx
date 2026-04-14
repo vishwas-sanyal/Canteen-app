@@ -1,12 +1,12 @@
-import React from 'react';
-import { Student } from '@types/index';
+import type { FC } from 'react';
+import type { Student } from '@types/index';
 
 interface StudentCardProps {
     student: Student;
     onMoreInfo: (student: Student) => void;
 }
 
-export const StudentCard: React.FC<StudentCardProps> = ({ student, onMoreInfo }) => {
+export const StudentCard: FC<StudentCardProps> = ({ student, onMoreInfo }) => {
     return (
         <div
             className="

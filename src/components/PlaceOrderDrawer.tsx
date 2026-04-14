@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import type { FC } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Order, Snack } from '@types/index';
+import type { Order, Snack } from '@types/index';
 import { QuantitySelector } from './QuantitySelector';
 
 interface PlaceOrderDrawerProps {
@@ -15,7 +16,7 @@ interface PlaceOrderDrawerProps {
   isLoading?: boolean;
 }
 
-export const PlaceOrderDrawer: React.FC<PlaceOrderDrawerProps> = ({
+export const PlaceOrderDrawer: FC<PlaceOrderDrawerProps> = ({
   isOpen,
   onClose,
   onSubmit,

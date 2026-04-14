@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { SnacksPage, StudentsPage, StudentDetailPage } from '@pages/index';
 import { TabToggle } from '@components/index';
 import { useUIStore, useStudentsStore, useSnacksStore } from '@store/index';
 import { getStudents, getSnacks } from '@api/index';
-import { Student } from '@types/index';
+import type { Student } from '@types/index';
 
 type PageView = 'snacks' | 'students' | 'student-detail';
 

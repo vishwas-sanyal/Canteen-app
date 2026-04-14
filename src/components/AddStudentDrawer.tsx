@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import type { FC } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useForm } from 'react-hook-form';
-import { AddStudentFormData } from '@types/index';
+import type { AddStudentFormData } from '@types/index';
 import { generateReferralCode, generateStudentId } from '@api/index';
 
 interface AddStudentDrawerProps {
@@ -11,7 +12,7 @@ interface AddStudentDrawerProps {
   isLoading?: boolean;
 }
 
-export const AddStudentDrawer: React.FC<AddStudentDrawerProps> = ({
+export const AddStudentDrawer: FC<AddStudentDrawerProps> = ({
   isOpen,
   onClose,
   onSubmit,

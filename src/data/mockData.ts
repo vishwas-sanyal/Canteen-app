@@ -1,4 +1,4 @@
-import { Snack, Student, Order } from '@types/index';
+import type { Snack, Student, Order } from '@types/index';
 
 export const MOCK_SNACKS: Snack[] = [
   {
@@ -91,6 +91,7 @@ export const MOCK_STUDENTS: Student[] = [
     class: '10-A',
     referralCode: 'AAR001',
     totalSpent: 450,
+    createdAt: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString(),
   },
   {
     id: 's2',
@@ -99,6 +100,7 @@ export const MOCK_STUDENTS: Student[] = [
     class: '10-A',
     referralCode: 'PRI002',
     totalSpent: 320,
+    createdAt: new Date(Date.now() - 25 * 24 * 60 * 60 * 1000).toISOString(),
   },
   {
     id: 's3',
@@ -107,6 +109,7 @@ export const MOCK_STUDENTS: Student[] = [
     class: '10-B',
     referralCode: 'RAH003',
     totalSpent: 650,
+    createdAt: new Date(Date.now() - 20 * 24 * 60 * 60 * 1000).toISOString(),
   },
   {
     id: 's4',
@@ -115,6 +118,7 @@ export const MOCK_STUDENTS: Student[] = [
     class: '10-B',
     referralCode: 'NEH004',
     totalSpent: 280,
+    createdAt: new Date(Date.now() - 15 * 24 * 60 * 60 * 1000).toISOString(),
   },
   {
     id: 's5',
@@ -123,6 +127,7 @@ export const MOCK_STUDENTS: Student[] = [
     class: '10-A',
     referralCode: 'ARJ005',
     totalSpent: 520,
+    createdAt: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString(),
   },
 ];
 

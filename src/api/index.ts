@@ -1,4 +1,4 @@
-import { Snack, Student, Order, PlaceOrderFormData, AddStudentFormData } from '@types/index';
+import type { Snack, Student, Order, PlaceOrderFormData, AddStudentFormData } from '@types/index';
 import { MOCK_SNACKS, MOCK_STUDENTS, MOCK_ORDERS } from '@data/mockData';
 
 // In-memory data stores (simulates database)

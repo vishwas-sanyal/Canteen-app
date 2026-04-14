@@ -1,7 +1,7 @@
-import React from 'react';
+import type { FC } from 'react';
 import { motion } from 'framer-motion';
 
-export const LoadingSpinner: React.FC = () => {
+export const LoadingSpinner: FC = () => {
   return (
     <div className="flex justify-center items-center py-8 md:py-12">
       <motion.div
@@ -13,7 +13,7 @@ export const LoadingSpinner: React.FC = () => {
   );
 };
 
-export const ErrorMessage: React.FC<{ message: string; onRetry?: () => void }> = ({
+export const ErrorMessage: FC<{ message: string; onRetry?: () => void }> = ({
   message,
   onRetry,
 }) => {
@@ -44,7 +44,7 @@ export const ErrorMessage: React.FC<{ message: string; onRetry?: () => void }> =
   );
 };
 
-export const EmptyState: React.FC<{ message: string; icon?: string }> = ({
+export const EmptyState: FC<{ message: string; icon?: string }> = ({
   message,
   icon = '📭',
 }) => {
