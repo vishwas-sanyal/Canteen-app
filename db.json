@@ -1,0 +1,115 @@
+{
+  "snacks": [
+    {
+      "id": "snack_001",
+      "name": "Pizza",
+      "price": 80,
+      "ordersCount": 20,
+      "image": null
+    },
+    {
+      "id": "snack_002",
+      "name": "Samosa",
+      "price": 30,
+      "ordersCount": 20,
+      "image": null
+    },
+    {
+      "id": "snack_003",
+      "name": "Burger",
+      "price": 50,
+      "ordersCount": 20,
+      "image": null
+    },
+    {
+      "id": "snack_004",
+      "name": "Noodles",
+      "price": 70,
+      "ordersCount": 20,
+      "image": null
+    },
+    {
+      "id": "snack_005",
+      "name": "Coke",
+      "price": 40,
+      "ordersCount": 15,
+      "image": null
+    },
+    {
+      "id": "snack_006",
+      "name": "Biryani",
+      "price": 120,
+      "ordersCount": 12,
+      "image": null
+    },
+    {
+      "id": "snack_007",
+      "name": "Dosa",
+      "price": 60,
+      "ordersCount": 18,
+      "image": null
+    },
+    {
+      "id": "snack_008",
+      "name": "Sandwich",
+      "price": 45,
+      "ordersCount": 25,
+      "image": null
+    }
+  ],
+  "students": [
+    {
+      "id": "STU_1704067200000_abc123def",
+      "name": "Vishwas",
+      "rollNo": "A1B123",
+      "class": "JK",
+      "referralCode": "AB123",
+      "totalSpent": 150,
+      "createdAt": "2024-01-01T10:00:00Z"
+    },
+    {
+      "id": "STU_1704067300000_xyz789abc",
+      "name": "Rinku",
+      "rollNo": "CD456",
+      "class": "JK",
+      "referralCode": "CD456",
+      "totalSpent": 1000,
+      "createdAt": "2024-01-02T10:00:00Z"
+    },
+    {
+      "id": "STU_1704067400000_def456ghi",
+      "name": "Jatin",
+      "rollNo": "EF789",
+      "class": "UKG",
+      "referralCode": "EF789",
+      "totalSpent": 30,
+      "createdAt": "2024-01-03T10:00:00Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "order_001",
+      "studentId": "STU_1704067200000_abc123def",
+      "snackId": "snack_001",
+      "quantity": 2,
+      "amount": 160,
+      "createdAt": "2024-01-10T10:30:00Z"
+    },
+    {
+      "id": "order_002",
+      "studentId": "STU_1704067300000_xyz789abc",
+      "snackId": "snack_002",
+      "quantity": 3,
+      "amount": 90,
+      "createdAt": "2024-01-10T11:00:00Z"
+    },
+    {
+      "id": "order_003",
+      "studentId": "STU_1704067400000_def456ghi",
+      "snackId": "snack_005",
+      "quantity": 1,
+      "amount": 40,
+      "createdAt": "2024-01-10T12:00:00Z"
+    }
+  ]
+}
